@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.res.AssetManager;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> surahAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, surahNames);
         surahAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerSurah.setAdapter(surahAdapter);
+
 
         // Set up translations
         List<String> translations = new ArrayList<>();
