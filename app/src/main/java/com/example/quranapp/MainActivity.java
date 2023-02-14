@@ -59,7 +59,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Set up translations
-
+        List<String> translations = new ArrayList<>();
+        translations.add("Urdu Translation");
+        translations.add("English Translation");
+        translations.add("Sindhi Translation");
+        translations.add("Hindi Translation");
+        translations.add("Pushto Translation");
+        ArrayAdapter<String> translationsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, translations);
+        translationsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerTranslation.setAdapter(translationsAdapter);
 
         // set up the recycler view
         List<Aya> ayas = new ArrayList<>();
