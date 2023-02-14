@@ -129,10 +129,7 @@ public class MainActivity extends AppCompatActivity {
         return quranList.stream().filter(quran -> quran.getSurahName().equals(surahName)).collect(Collectors.toList());
     }
 
-    private List<String> getSurahNames(List<Surah> quranList) {
-        // get a list of unique surah names
-        return quranList.stream().map(Surah::getSurahName).distinct().collect(Collectors.toList());
-    }
+
 
     private List<String> getParahNames(List<Parah> parahList) {
         // get a list of unique surah names
