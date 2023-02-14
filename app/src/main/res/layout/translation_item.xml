@@ -9,6 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:background="#00828E"/>
+        android:background="#19B3C1"/>
 
 </LinearLayout>
